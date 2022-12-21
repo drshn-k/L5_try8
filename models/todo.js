@@ -76,9 +76,7 @@ module.exports = (sequelize, DataTypes) => {
       return Todo.update(
         { completed: true },
         {
-          where: {
-            id,
-          },
+          where: { id: id },
         }
       );
     }
